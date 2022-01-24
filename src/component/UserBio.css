@@ -1,0 +1,89 @@
+.userBio {
+  padding: 2em;
+  box-shadow: #ccc 0 4px 8px -4px;
+  border-radius: 24px;
+  text-align: center;
+  color: #212529;
+}
+.connection {
+ font-weight: 600;
+ font-size: 18px;
+}
+.img_location {
+  width: 25px;
+  height: 20px;
+}
+.img_mail {
+  width: 22px;
+  height: 22px;
+}
+.btn2 {
+  margin: 1em 0;
+  width: 400px;
+  padding: 10px;
+  font-size: 15px;
+  background: linear-gradient(to bottom right, #dc3545, #c50707);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 24px;
+}
+.btn2:hover {
+  background: linear-gradient(to bottom right, #c50707, #dc3545);
+  box-shadow: #ccc 0 4px 8px -4px;
+}
+
+.tagsforprofession {
+  font-weight:bolder;
+  
+}
+.bio{
+    
+    
+}
+.bio > div {
+    width: 350px;
+    margin: 1em auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.bio .userdetails, .biouseremail{
+  color: #6c6a6a;
+
+}
+.bio .userlocation{
+    margin-right: 33px;
+    display: flex;
+    align-items: center;
+}
+.biouseremail > span{
+    display:flex;
+    align-items:center;
+}
+.biouseremail > span > img{
+  margin:0 0.3em 0 0;
+}
+
+@media screen and (max-width: 500px) {
+    .btn2{
+        width:100%
+    }
+  }
+  
+@media screen and (max-width: 500px) {
+    .bio > div{    
+        
+        width: 100%;    
+    }
+    .userBio{ 
+        padding: 2em 1em;
+    }
+   
+}
+@media screen and (max-width: 300px) {
+    
+}

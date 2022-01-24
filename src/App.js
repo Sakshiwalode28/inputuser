@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import UserBio from "./component/UserBio";
+import UserInput from "./component/UserInput";
 
 function App() {
+  const [viewdetails, setViewDetails] = useState(false);
+  const collectInfo = () => {
+    setViewDetails(true);
+  };
+  const [user, setUser] = useState({
+    username: "",
+    offname: "",
+    profession: "",
+    email: "",
+    city: "",
+  });
+  let name, value;
+  const handleInput = (e) => {
+    name = e.target.name;
+    value = e.target.value;
+
+    setUser({...user, [name]:value})
+};
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {viewdetails === false ? <UserInput collectInfo={collectInfo}  handleInput={handleInput} user={user} setUser={setUser} /> : " "}
+      {viewdetails ? <UserBio user={user}/> : " "}
     </div>
   );
 }
