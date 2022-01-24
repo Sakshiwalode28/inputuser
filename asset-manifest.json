@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/inputuser/static/css/main.4a9bab3b.css",
+    "main.js": "/inputuser/static/js/main.4a943295.js",
+    "static/js/787.cb064a9f.chunk.js": "/inputuser/static/js/787.cb064a9f.chunk.js",
+    "static/media/email.png": "/inputuser/static/media/email.00b77611c2b53e1aed4a.png",
+    "static/media/location.png": "/inputuser/static/media/location.a405c2668c55f74c09be.png",
+    "index.html": "/inputuser/index.html",
+    "main.4a9bab3b.css.map": "/inputuser/static/css/main.4a9bab3b.css.map",
+    "main.4a943295.js.map": "/inputuser/static/js/main.4a943295.js.map",
+    "787.cb064a9f.chunk.js.map": "/inputuser/static/js/787.cb064a9f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a9bab3b.css",
+    "static/js/main.4a943295.js"
+  ]
+}
